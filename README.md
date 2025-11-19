@@ -25,9 +25,9 @@ Current state: TODO
 
 ## Requirements
 
-* JDK 11+
-* [Kotlin 1.3+](https://kotlinlang.org/)
-* [JavaFX 13+](https://openjfx.io/)
+* JDK 17+
+* [Kotlin 1.7+](https://kotlinlang.org/)
+* [JavaFX 22+](https://openjfx.io/)
 
 ## Installation
 
