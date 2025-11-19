@@ -75,6 +75,9 @@ class ValidationContext {
                     if (!it) validator.validate(decorateErrors)
                 }
             }
+            ValidationTrigger.None -> {
+                // Do nothing - validation will be triggered manually
+            }
         }
         validators.add(validator)
         return validator

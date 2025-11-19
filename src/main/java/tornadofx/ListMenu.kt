@@ -132,7 +132,7 @@ class ListMenuSkin(control: ListMenu) : SkinBase<ListMenu>(control) {
 
     private fun acc(fn: (Node) -> Double) = children.sumByDouble { fn(it) }
 
-    private fun biggest(fn: (Node) -> Double) = children.map { fn(it) }.max() ?: 0.0
+    private fun biggest(fn: (Node) -> Double) = children.map { fn(it) }.maxOrNull() ?: 0.0
 
     override fun computeMinWidth(height: Double, topInset: Double, rightInset: Double, bottomInset: Double, leftInset: Double) =
             if (skinnable.orientation == VERTICAL) biggest { it.minWidth(height) } else acc { it.minWidth(height) }
@@ -146,7 +146,7 @@ class ListMenuSkin(control: ListMenu) : SkinBase<ListMenu>(control) {
         else
             acc { it.prefWidth(height) } + leftInset + rightInset
 
-        return Math.max(prefWidth, skinnable.prefWidth)
+        return maxOf(prefWidth, skinnable.prefWidth)
     }
 
     override fun computePrefHeight(width: Double, topInset: Double, rightInset: Double, bottomInset: Double, leftInset: Double): Double {

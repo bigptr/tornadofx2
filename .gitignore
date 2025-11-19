@@ -14,8 +14,9 @@ bin/
 .settings/
 .project
 .classpath
+.vscode 
 
 # gradle
 .gradle/
-!gradle-wrapper.jar
-!gradle-wrapper.properties
+#!gradle-wrapper.jar
+#!gradle-wrapper.properties

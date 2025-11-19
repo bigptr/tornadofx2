@@ -1,12 +1,12 @@
 # TornadoFX v2 (Gradle)
 
-A JavaFX framework for Kotlin (Java 11+)
+A JavaFX framework for Kotlin (Java 17+)
 
 This (experimental) branch is gradle based.
 Current state: TODO
 
-* Kotlin & Java target is Java 11.0.2
-* JavaFX version is 15.0.1
+* Kotlin target is now 1.7.20 & Java target is Java 17
+* JavaFX version is 22
 * JUnit5 with additional vintage engine for unit testing
 * Tests running on classpath ignoring javas module system 
 * no support for OSGI bundle
